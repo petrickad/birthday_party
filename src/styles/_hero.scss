@@ -1,0 +1,43 @@
+.hero{
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 43px;
+    width: 100%;
+    background-image: url(../images/baloes-ai-brush-removebg-5h2mjw6c.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #7f0000e1;
+    position: relative;
+
+    .container{
+        position: relative;
+
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#00000046, #000000);
+    }
+
+    &__brain{
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+
+        &__image{
+            max-width:360px;
+            width: 100%;
+        }
+    }
+}

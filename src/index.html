@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Tech Talks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero__brain">
+                <h1 data-aos="fade-up" data-aos-delay="500">Happy Birthday</h1>
+            </div>
+            <div class="hero__content row">
+                <div data-aos-duration="1000" data-aos="fade-right" data-aos-delay="1000" class="hero__content__image col-md-4">
+                    <img class="d-block w-100" src="images/bearpong.png" alt="">
+                    <p>
+                        Prepare-se para uma noite inesquecível de diversão e competição na festa de aniversário mais animada do ano! Este ano, o tema é Torneio de Beer Pong, e todos estão convidados a participar dessa celebração épica.
+                    </p>
+                </div>
+                <div data-aos-duration="1000" data-aos="fade-up" data-aos-delay="1000" class="hero__content__image col-md-4">
+                    <img class="d-block w-100" src="images/comemorando.png" alt="">
+                    <p>
+                        O momento mais esperado da noite! Às 21:00, todos se reunirão ao redor do bolo para cantar parabéns e celebrar mais um ano de vida do aniversariante. O bolo, decorado com um tema especial, será uma verdadeira obra de arte e uma delícia para todos os convidados.
+                    </p>
+                </div>
+                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="1000" class="hero__content__image col-md-4">
+                    <img class="d-block w-100" src="images/games.png" alt="">
+                    <p>
+                        Durante a competição, aproveite os deliciosos lanches e bebidas disponíveis. Teremos uma variedade de opções para todos os gostos, incluindo opções vegetarianas e veganas.
+                    </p>
+                </div>
+            </div>
+            <div class="infos_bar" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000" >
+                <ul class="infos_bar__details nav">
+                    <li class="infos_bar__details__item infos_bar__details__item--is-active nav-item">
+                        <a href="nav-link active" data-bs-target="#aba1">Quando vai ser?</a>
+                    </li>
+                    <li class="infos_bar__details__item">
+                        <a href="nav-link" data-bs-target="#aba2">Onde será?</a>
+                    </li>
+                    <li class="infos_bar__details__item">
+                        <a href="nav-link" data-bs-target="#aba3">O que levar?</a>
+                    </li>
+                    <a href="" class="btn btn-primary float-left">Quero participar</a>
+                </ul>
+                <div class="tab-content d-block">
+                    <div class="tab-pane active" id="aba1">
+                        A data será 19/09/2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="timer">
+        <div data-aos-duration="1000" data-aos="fade-up" data-aos-delay="1000"  class="container">
+            <span id="timeCount"></span>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
