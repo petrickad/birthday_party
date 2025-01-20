@@ -40,4 +40,23 @@
             width: 100%;
         }
     }
+
+    @media (max-width: 1024px){
+        &__content{
+            &__image{
+                max-width: 200px;
+                
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    @media(max-width: 640px){
+        &__content{
+            &__image{
+                max-width: 360px;
+            }
+        }
+    }
 }
