@@ -1,6 +1,6 @@
 AOS.init();
 
-const birthdayDate = new Date("Sep 19, 2025 00:00:00");
+const birthdayDate = new Date("Sep 19, 2025 17:00:00");
 const timeStampBirthday = birthdayDate.getTime();
 
 const countHours = setInterval(function() {
@@ -30,3 +30,18 @@ const countHours = setInterval(function() {
         document.getElementById('timeCount').innerHTML = 'Já começou, ou finalizou! <br> Nos vemos ano que vem.';
     }
 }, 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todos os itens de lista com a classe infos_bar__details__item
+    const items = document.querySelectorAll('.infos_bar__details__item');
+
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            // Remove a classe "infos_bar__details__item--is-active" de todos os itens
+            items.forEach(el => el.classList.remove('infos_bar__details__item--is-active'));
+
+            // Adiciona a classe ao item clicado
+            item.classList.add('infos_bar__details__item--is-active');
+        });
+    });
+});
